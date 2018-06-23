@@ -4,3 +4,4 @@
 
 * [console用法](./src/console)
 * [new Date()在严格模式下的坑](./src/newDate)
+* [引用变量的坑](./src/quote)

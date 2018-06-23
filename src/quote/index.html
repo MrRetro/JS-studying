@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const obj = {a:1,b:2};
+    console.log(obj);
+    obj.a = 3;
+    console.log(obj);
+
+    console.log('-------------------------------');
+
+    const obj1 = {a:1,b:2};
+    console.log(JSON.parse(JSON.stringify(obj1)));
+    obj1.a = 3;
+    console.log(JSON.parse(JSON.stringify(obj1)));
+</script>
+</body>
+</html>
