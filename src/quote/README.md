@@ -83,6 +83,7 @@ this is why?
 首先明确一点，obj所储存的是一个引用类型值的地址，所有对obj的操作都会具体到这个地址所对应的那个对象上。其次，console并不是JavaScript提供的对象，而是浏览器的控制台提供的。
 这具体到不同的浏览器，比如Chrome中是由Devtool的控制台提供，Firefox中是由Firebug的控制台提供。
 在Chrome中，console.log在控制台打开后才起作用，也就是说，当你打开控制台时，console.log才会将之前被传进去的参打印出来。](https://www.cnblogs.com/sevenskey/p/5476386.html)
+
 那么该如何解决这个问题？只能在执行的过程中创建新对象来曲线救国了：
 ```js
 const obj = {a:1,b:2};
