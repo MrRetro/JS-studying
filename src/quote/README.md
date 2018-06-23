@@ -29,11 +29,9 @@ setTimeout(()=>{
 console.log(obj.a);
 // 1
 ```
-
-
-
 明明a已经被改成3了，尼玛，为什么打印出来还是1？
 其实这个坑是因为js是单线程,而setTimeout是js空闲时运行，所以即使setTimeout设置为0秒后立即运行还是得等js空闲时运行的。
+
 所以上面的执行顺序实际是这样子的：
 ```js
 const obj = {a:1,b:2}; // 顺序1
