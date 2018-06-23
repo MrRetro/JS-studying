@@ -55,13 +55,14 @@ setTimeout(()=>{
 },0);
 console.log(obj.a,'002');
 // 1 "002"
-// 1 "001"
+// 3 "001"
 ```
 
 
 
 要想把引用类型彻底搞懂就要不断深入，再来个例子
 ```html
+// html
 const obj = {a:1,b:2};
 console.log(obj.a);
 obj.a = 3;
@@ -71,6 +72,7 @@ console.log(obj.a);
 // {a:3,b:2}
 ```
 ```js
+// 控制台
 const obj = {a:1,b:2};
 console.log(obj.a);
 obj.a = 3;
