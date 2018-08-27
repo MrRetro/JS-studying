@@ -9,3 +9,4 @@
 * [github自动部署服务器(已确认,这个地址还不算完整,等有空重新整理)](https://www.jianshu.com/p/b524b151d35f)
 * [git flow工作流(已确认)](https://www.jianshu.com/p/62b4ebe283f3)
 * [七牛图片上传(待确认)](https://www.cnblogs.com/cjh1111/p/7017295.html)
+* [vue+node+mongodb 搭建一个完整博客(待确认)](https://segmentfault.com/a/1190000013025450)
