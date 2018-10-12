@@ -11,3 +11,4 @@
 * [七牛图片上传(待确认)](https://www.cnblogs.com/cjh1111/p/7017295.html)
 * [vue+node+mongodb 搭建一个完整博客(待确认)](https://segmentfault.com/a/1190000013025450)
 * [koa2+mongodb搭建简易nodejs后台接口服务(待确认)](https://www.jianshu.com/p/dcdd116600fe)
+* [ios上传七牛被禁](https://segmentfault.com/q/1010000003758618)
