@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象扁平化</title>
+</head>
+<body>
+
+<script>
+
+    // 字符串首字母大写
+    function firstUpperCase(str) {
+        return (str||'').replace(/( |^)[a-z]/g, L => L.toUpperCase());
+    }
+    // 对象扁平化
+    function flatValue(data, item2, value) {
+        if (!value) value = {};
+        typeof data === 'object' && Object.keys(data).forEach(item => {
+            if (
+                data[item] &&
+                typeof data[item] === 'object' &&
+                !Array.isArray(data[item])
+            ) {
+                if (item2) {
+                    this.flatValue(data[item], [item2] + firstUpperCase(item), value);
+                } else {
+                    this.flatValue(data[item], [item2] + item, value);
+                }
+            }
+            if (item2) {
+                if (typeof data[item] !== 'object' || Array.isArray(data[item])) {
+                    value[item2 + firstUpperCase(item)] = data[item];
+                }
+            } else {
+                if (typeof data[item] !== 'object' || Array.isArray(data[item])) {
+                    value[item] = data[item];
+                }
+            }
+        });
+        return value;
+    }
+
+
+    console.log(flatValue({a:{b:1,c:1,n:{n1:{kk:99}}},c:678,d:999}))
+</script>
+</body>
+</html>
